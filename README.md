@@ -5,7 +5,7 @@ On this website you can see some of my web development projects, my git reposito
 ## Languages known
 
   - **PHP**
-    - :green_circle:**Vanilla** *(PHP High)*
+    - :green_circle:**Vanilla** *(High)*
     - :yellow_circle:**Laravel** *(Medium)*
   - **Javascript**
     - :green_circle:**Vanilla** *(High)*
