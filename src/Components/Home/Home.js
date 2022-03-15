@@ -28,10 +28,10 @@ const Home = () => {
           <h4>Some extra knowledge...</h4>
           
           <h5 className="pt-2"><FontAwesomeIcon icon={faCube} /> Industrial Automation</h5>
-          <a href="https://youtu.be/N-JrJYE6JDA?t=15" target="_blank" className="h6" alt="PLC and HMI programming">Festo PLC and HMI programming</a>
+          <a href="https://youtu.be/N-JrJYE6JDA?t=15" target="_blank" rel="noreferrer" className="h6" alt="PLC and HMI programming">Festo PLC and HMI programming</a>
           
           <h5 className="pt-2"><FontAwesomeIcon icon={faCodeBranch} /> Project managment</h5>
-          <a href="https://youtu.be/jQh6dEYE2hg" target="_blank" className="h6" alt="Project managment">Design, development and production of can filling and closing machines</a>
+          <a href="https://youtu.be/jQh6dEYE2hg" target="_blank" rel="noreferrer" className="h6" alt="Project managment">Design, development and production of can filling and closing machines</a>
         
         </div>
       </div>
