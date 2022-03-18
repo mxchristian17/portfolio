@@ -7,8 +7,15 @@ import Navbar from './Components/Navbar/Navbar.js';
 import Projects from './Components/Projects/Projects';
 
 function App() {
+
+  const background = {
+    'background' : 'url(/images/bg.png) no-repeat top center',
+    'backgroundSize' : '100vw'
+
+  }
+
   return (
-    <div className="App">
+    <div className="App" style={ background }>
       <GeneralContextProvider>
         <Navbar />
         <Routes>

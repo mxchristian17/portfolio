@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInbox } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelopesBulk, faInbox } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 const Contact = () => {
@@ -91,44 +91,41 @@ const Contact = () => {
         e.target.reset()
     }
 
-    const style = {
-        'backgroundColor' : 'rgb(255, 255, 255)',
-    }
-
   return (
-    <div className="w-100 p-lg-4" style={style} id="contacto">
-        <div className="container">
+    <div className="w-100 p-lg-4" id="contacto">
+        <div className="container-fluid">
             <div className="row p-2 py-4 my-4">
                 <div className="col">
-                    <h5 style={{'fontWeight' : '600'}}>Contacto</h5>
+                    <h5 style={{'fontWeight' : '600'}}>Contact</h5>
                 </div>
                 <div>
                     <div><FontAwesomeIcon icon={ faInbox } /> <a href="mailto:orengiachristian@gmail.com" className="text-decoration-none">orengiachristian@gmail.com</a></div>
                     <div><FontAwesomeIcon icon={ faWhatsapp } className="text-success" /> <a href="https://wa.me/+5492235377049" target="_blank" rel="noreferrer" className="text-decoration-none">+54 9 223 537 7049</a></div>
                 </div>
             </div>
-            <div className="row">
-                <div className="col-md-2 col-lg-3 d-lg-block"></div>
-                <div className="col-md-8 col-lg-6">
+            <div className="row w-100 justify-content-md-center">
+                <div className="col-md-6 col-lg-4 d-none d-md-block">
+                    <FontAwesomeIcon icon={ faEnvelopesBulk } style={{ 'fontSize' : '15rem', 'color' : 'rgb(100,150,240)' }} />
+                </div>
+                <div className="col-md-6 col-lg-5">
                     <form className="form" onSubmit={submit}>
                         <div className="mb-3">
                             <label htmlFor="name" className="form-label">Nombre</label>
-                            <input type="text" className={"form-control" + (errors.name ? " is-invalid" : "")} onChange={handleChange} id="name" placeholder="Nombre" name="from_name" />
+                            <input type="text" className={"form-control rounded-pill px-4" + (errors.name ? " is-invalid" : "")} onChange={handleChange} id="name" placeholder="Nombre" name="from_name" />
                             { errors.name && <div className="invalid-feedback">{ errors.name }</div> }
                         </div>
                         <div className="mb-3">
                             <label htmlFor="email" className="form-label">Email</label>
-                            <input type="email" className={"form-control" + (errors.email ? " is-invalid" : "")} onChange={handleChange} id="email" placeholder="Email..." name="from_email" />
+                            <input type="email" className={"form-control rounded-pill px-4" + (errors.email ? " is-invalid" : "")} onChange={handleChange} id="email" placeholder="Email..." name="from_email" />
                             { errors.email && <div className="invalid-feedback">{ errors.email }</div> }
                         </div>
                         <div className="mb-3">
                             <label htmlFor="message" className="form-label">Mensaje</label>
-                            <textarea className="form-control" id="message" rows="3" name="message"></textarea>
+                            <textarea className="form-control rounded-3 px-4" id="message" rows="3" name="message"></textarea>
                         </div>
                         <button type="submit" className="btn btn-outline-primary">Enviar</button>
                     </form>
                 </div>
-                <div className="col-md-2 col-lg-3 d-lg-block"></div>
             </div>
         </div>
     </div>
