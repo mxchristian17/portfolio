@@ -18,27 +18,27 @@ const Contact = () => {
 
     const validateName = (value, err) => {
         err = ({...err, name : undefined})
-        if(value.length > 100) err = ({...err, name : "El nombre es demasiado largo"})
-        if(value.length < 7) err = ({...err, name : "Por favor ingrese un Nombre y Apellido válidos"})
+        if(value.length > 100) err = ({...err, name : "The name is too long"})
+        if(value.length < 7) err = ({...err, name : "Please enter a valid first and last name"})
         if (typeof value !== "undefined") {
             if (!value.match(/^[a-zA-Z ]+$/)) {
-                err = ({...err, name : "El nombre solo debe contener letras y espacios"})
+                err = ({...err, name : "The name must only contain letters and spaces"})
             }
         }
-        if(value.length === 0) err = ({...err, name : "Por favor ingrese un nombre"})
+        if(value.length === 0) err = ({...err, name : "Please enter a name"})
         return err
     }
     
     const validateEmail = (value, err) => {
         err = ({...err, email : undefined})
-        if(value.length > 100) err = ({...err, email : "El email es demasiado largo"})
-        if(value.length < 7) err = ({...err, email : "Por favor ingrese una dirección de email válida"})
+        if(value.length > 100) err = ({...err, email : "The email is too long"})
+        if(value.length < 7) err = ({...err, email : "Please enter a valid email address"})
         if (typeof value !== "undefined") {
             if (!value.match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
-                err = ({...err, email : "El email debe tener un formato válido"})
+                err = ({...err, email : "The email must contain a valid format"})
             }
         }
-        if(value.length === 0) err = ({...err, email : "Por favor ingrese una dirección de email"})
+        if(value.length === 0) err = ({...err, email : "Please enter an email address"})
         return err
     }
 
@@ -96,11 +96,7 @@ const Contact = () => {
         <div className="container-fluid">
             <div className="row p-2 py-4 my-4">
                 <div className="col">
-                    <h5 style={{'fontWeight' : '600'}}>Contact</h5>
-                </div>
-                <div>
-                    <div><FontAwesomeIcon icon={ faInbox } /> <a href="mailto:orengiachristian@gmail.com" className="text-decoration-none">orengiachristian@gmail.com</a></div>
-                    <div><FontAwesomeIcon icon={ faWhatsapp } className="text-success" /> <a href="https://wa.me/+5492235377049" target="_blank" rel="noreferrer" className="text-decoration-none">+54 9 223 537 7049</a></div>
+                    <h4 style={{'fontWeight' : '600'}}>Contact me...</h4>
                 </div>
             </div>
             <div className="row w-100 justify-content-md-center">
@@ -108,20 +104,23 @@ const Contact = () => {
                     <FontAwesomeIcon icon={ faEnvelopesBulk } style={{ 'fontSize' : '15rem', 'color' : 'rgb(100,150,240)' }} />
                 </div>
                 <div className="col-md-6 col-lg-5">
+                    <div className="mb-3">
+                        <div className="text-start px-4">
+                            <div><FontAwesomeIcon icon={ faInbox } /> <a href="mailto:orengiachristian@gmail.com" className="text-decoration-none">orengiachristian@gmail.com</a></div>
+                            <div><FontAwesomeIcon icon={ faWhatsapp } className="text-success" /> <a href="https://api.whatsapp.com/send?phone=5492235377049&text=Hi%20Christian!I%20want%20to%20offer%20you%20a%20job!" rel="noreferrer" alt="Whatsapp" target="_blank" className="text-decoration-none">+54 9 223 537 7049</a></div>
+                        </div>
+                    </div>
                     <form className="form" onSubmit={submit}>
                         <div className="mb-3">
-                            <label htmlFor="name" className="form-label">Nombre</label>
-                            <input type="text" className={"form-control rounded-pill px-4" + (errors.name ? " is-invalid" : "")} onChange={handleChange} id="name" placeholder="Nombre" name="from_name" />
+                            <input type="text" className={"form-control rounded-pill px-4" + (errors.name ? " is-invalid" : "")} onChange={handleChange} id="name" placeholder="Name" name="from_name" />
                             { errors.name && <div className="invalid-feedback">{ errors.name }</div> }
                         </div>
                         <div className="mb-3">
-                            <label htmlFor="email" className="form-label">Email</label>
                             <input type="email" className={"form-control rounded-pill px-4" + (errors.email ? " is-invalid" : "")} onChange={handleChange} id="email" placeholder="Email..." name="from_email" />
                             { errors.email && <div className="invalid-feedback">{ errors.email }</div> }
                         </div>
                         <div className="mb-3">
-                            <label htmlFor="message" className="form-label">Mensaje</label>
-                            <textarea className="form-control rounded-3 px-4" id="message" rows="3" name="message"></textarea>
+                            <textarea className="form-control rounded-3 px-4" id="message" rows="3" name="message" placeholder="Message..."></textarea>
                         </div>
                         <button type="submit" className="btn btn-outline-primary">Enviar</button>
                     </form>
