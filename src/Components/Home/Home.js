@@ -1,6 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCodeBranch, faCompassDrafting, faCube } from '@fortawesome/free-solid-svg-icons'
+import { faCss3, faGitSquare, faHtml5, faLaravel, faPhp, faReact } from '@fortawesome/free-brands-svg-icons'
 import { Link } from 'react-router-dom';
 import Console from '../Console/Console'
 import '../Home/Typing.css'
@@ -36,6 +37,15 @@ const Home = () => {
 
           <h5 className="pt-3 mb-0"><FontAwesomeIcon icon={faCompassDrafting} /> 3D design and render</h5>
           <Link to="/vr" className="h6">3D environmental render for VR</Link>
+          
+          <div className="pt-4 h4 opacity-75">
+            <FontAwesomeIcon className="px-2" icon={ faGitSquare } />
+            <FontAwesomeIcon className="px-2" icon={ faReact } />
+            <FontAwesomeIcon className="px-2" icon={ faPhp } />
+            <FontAwesomeIcon className="px-2" icon={ faLaravel } />
+            <FontAwesomeIcon className="px-2" icon={ faCss3 } />
+            <FontAwesomeIcon className="px-2" icon={ faHtml5 } />
+          </div>
 
         </div>
       </div>
