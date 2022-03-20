@@ -5,7 +5,7 @@ import Symbol from '../SyntaxStyles/Symbol'
 import Text from '../SyntaxStyles/Text'
 import Comment from '../SyntaxStyles/Comment'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCss3, faGitSquare, faHtml5, faLaravel, faPhp, faReact } from '@fortawesome/free-brands-svg-icons'
+import { faBootstrap, faCss3, faGitSquare, faHtml5, faLaravel, faPhp, faReact } from '@fortawesome/free-brands-svg-icons'
 
 
 const Console = () => {
@@ -47,6 +47,7 @@ const Console = () => {
           <FontAwesomeIcon className="px-2" icon={ faPhp } />
           <FontAwesomeIcon className="px-2" icon={ faLaravel } />
           <FontAwesomeIcon className="px-2" icon={ faCss3 } />
+          <FontAwesomeIcon className="px-2" icon={ faBootstrap } />
           <FontAwesomeIcon className="px-2" icon={ faHtml5 } />
         </div>
 

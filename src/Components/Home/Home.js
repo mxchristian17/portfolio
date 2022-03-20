@@ -1,7 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCodeBranch, faCompassDrafting, faCube } from '@fortawesome/free-solid-svg-icons'
-import { faCss3, faGitSquare, faHtml5, faLaravel, faPhp, faReact } from '@fortawesome/free-brands-svg-icons'
+import { faBootstrap, faCss3, faGitSquare, faHtml5, faLaravel, faPhp, faReact } from '@fortawesome/free-brands-svg-icons'
 import { Link } from 'react-router-dom';
 import Console from '../Console/Console'
 import '../Home/Typing.css'
@@ -44,6 +44,7 @@ const Home = () => {
             <FontAwesomeIcon className="px-2" icon={ faPhp } />
             <FontAwesomeIcon className="px-2" icon={ faLaravel } />
             <FontAwesomeIcon className="px-2" icon={ faCss3 } />
+            <FontAwesomeIcon className="px-2" icon={ faBootstrap } />
             <FontAwesomeIcon className="px-2" icon={ faHtml5 } />
           </div>
 
