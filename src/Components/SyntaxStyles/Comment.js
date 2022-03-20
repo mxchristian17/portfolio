@@ -6,10 +6,10 @@ const Comment = (props) => {
 
     const { consoleFontStyle } = useContext(GeneralContext);
     const consoleCommentStyle = { ...consoleFontStyle, 'color' : 'rgb(106,153,62)' }
-    const { text } = props
+    const { text, blink=true } = props
 
   return (
-    <span className="blink" style= { consoleCommentStyle } >{ text }</span>
+    <span className={blink ? "blink" : null} style= { consoleCommentStyle } >{ text }</span>
   )
 }
 

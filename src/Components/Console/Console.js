@@ -14,7 +14,7 @@ const Console = () => {
 
   return (
     <div style={ consoleBackgroundStyle } className="position-relative col-md-6 col-lg-6 text-start ps-4 rounded py-3 text-truncate text-light">
-        
+        <Comment text="//Some of my projects..." blink={false} /><br />
         <VarDeclaration text="const " />
         <Var text="reactJsProject " />
         <Symbol text="= { " /><br />

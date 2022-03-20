@@ -6,7 +6,9 @@ const Projects = () => {
     const { projectId } = useParams();
 
   return (
-    <div className="container">Project { projectId }</div>
+    <div className="container">
+      <h1><span className="text-capitalize">{ projectId }</span> Project</h1>
+    </div>
   )
 }
 
