@@ -6,6 +6,7 @@ import Contact from './Components/Contact/Contact';
 import Navbar from './Components/Navbar/Navbar.js';
 import Projects from './Components/Projects/Projects';
 import VrView from './Components/VrView/VrView';
+import Footer from './Components/Footer/Footer';
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="vr" element={<VrView />} />
         </Routes>
       </GeneralContextProvider>
+      <Footer />
     </div>
   );
 }
