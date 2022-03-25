@@ -1,5 +1,6 @@
 import './App.css';
 import { Routes, Route } from "react-router-dom";
+import useGaTracker from './useGaTracker'
 import { GeneralContextProvider } from './Context/GeneralContext';
 import Home from './Components/Home/Home';
 import Contact from './Components/Contact/Contact';
@@ -9,6 +10,8 @@ import VrView from './Components/VrView/VrView';
 import Footer from './Components/Footer/Footer';
 
 function App() {
+
+  useGaTracker();
 
   const background = {
     'background' : 'url(/images/bg.png) no-repeat top center',
