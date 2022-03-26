@@ -3,6 +3,10 @@ import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
 
+    const responseGoogle = (response) => {
+        console.log(response);
+      }
+
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light border-bottom">
             <div className="container-fluid">

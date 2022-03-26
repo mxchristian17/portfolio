@@ -1,3 +1,4 @@
+import { Popover, Button, OverlayTrigger } from 'react-bootstrap'
 import React, { useState, useEffect } from 'react'
 
 const WeatherWidget = () => {
@@ -6,8 +7,17 @@ const WeatherWidget = () => {
     const [weather, setweather] = useState([]);
     const [location, setLocation] = useState();
 
+    const popover = (
+        <Popover id="popover-basic">
+          <Popover.Header as="h3">Why this widget?</Popover.Header>
+          <Popover.Body>
+            The reason for this widget here is to show an example of a <strong>REST Api</strong> in use
+          </Popover.Body>
+        </Popover>
+      );
+
     const weatherIcon = (icon) => {
-        return 'http://openweathermap.org/img/wn/'+icon+'.png'
+        return 'https://openweathermap.org/img/wn/'+icon+'.png'
     }
 
     const kelvin2Celsius = (T) => { return Math.round((T-273.15) * 10) / 10 }
@@ -47,6 +57,9 @@ const WeatherWidget = () => {
             <div style={{fontSize: "0.7em"}} className="col lh-1 py-0 pl-2">{kelvin2Celsius( weather.main.temp )}°C<br />
             Hum{weather.main.humidity}%</div>
             <div className="col py-0 px-1"><img alt="weather icon" style={{height: "2.5em"}} src={weatherIcon(weather.weather[0].icon)} /></div>
+            <OverlayTrigger trigger="focus" placement="top" overlay={popover}>
+                <Button variant="dark">Why this?</Button>
+            </OverlayTrigger>
         </div>
         }
     </div>
