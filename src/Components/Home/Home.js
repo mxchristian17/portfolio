@@ -1,6 +1,5 @@
 import React from 'react'
 import Console from '../Console/Console'
-import '../Home/Typing.css'
 import Profile from '../Profile/Profile'
 import AboutMe from '../AboutMe/AboutMe';
 import ExtraKnowledge from '../ExtraKnowledge/ExtraKnowledge';

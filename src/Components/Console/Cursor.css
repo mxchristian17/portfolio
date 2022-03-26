@@ -1,0 +1,27 @@
+.cursor {
+    position: relative;
+    display: inline;
+}
+.cursor::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    height: 1.1em;
+    background: #4FC3F7;
+    animation: cursorBlink 0.8s steps(3) infinite
+}
+
+@keyframes cursorBlink {
+
+    0%,
+    75% {
+        opacity: 1
+    }
+
+    76%,
+    100% {
+        opacity: 0
+    }
+}

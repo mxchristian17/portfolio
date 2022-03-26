@@ -1,6 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faWhatsapp, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import '../Profile/Typing.css'
 
 const ProfileData = () => {
   return (

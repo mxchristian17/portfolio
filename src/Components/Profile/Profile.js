@@ -19,7 +19,7 @@ const Profile = (props) => {
             </div>
           </div>} 
 
-          <img onLoad={() => setLoading(false)} src="/images/CEO.png" className={loading ? "d-none" :  "w-100 align-middle rounded-circle shadow"} alt="avatar" />
+          <img onLoad={() => setLoading(false)} src="/images/CEO.png" style={{maxWidth : "15em"}} className={loading ? "d-none" :  "w-100 align-middle rounded-circle shadow"} alt="avatar" />
           <div className="d-none d-md-block pt-2"><ProfileData /></div>
         </div>
 
