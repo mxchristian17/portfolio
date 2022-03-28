@@ -62,9 +62,9 @@ const WeatherWidget = () => {
   return (
     <div className="w-100">
         {error && "Weather failed loading"}
-        {
-        typeof(weather.main) !== "undefined" &&
         <div style={{fontSize : "1em"}} className="rounded d-flex align-items-center p-0 m-0">
+        {
+        typeof(weather.main) !== "undefined" ?
             <div>
                 <div className="d-inline float-start me-3">
                     <OverlayTrigger trigger="focus" placement="top" overlay={popover}>
@@ -75,8 +75,9 @@ const WeatherWidget = () => {
                 <img alt="weather icon" style={{height: "2.5em"}} src={ weather.icon } />
                 { weather.description }
             </div>
-        </div>
+        :   <h6>REST API usage <small className="text-secondary">(enable location on your browser to look one example here!)</small></h6>
         }
+        </div>
     </div>
   )
 }
