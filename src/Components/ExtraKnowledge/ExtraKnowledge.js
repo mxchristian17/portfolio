@@ -1,6 +1,7 @@
 import React from 'react'
+import WeatherWidget from '../WeatherWidget/WeatherWidget'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCodeBranch, faCompassDrafting, faCube } from '@fortawesome/free-solid-svg-icons'
+import { faCodeBranch, faCompassDrafting, faCube, faLaptopCode } from '@fortawesome/free-solid-svg-icons'
 import { faBootstrap, faCss3, faGitSquare, faHtml5, faLaravel, faPhp, faReact } from '@fortawesome/free-brands-svg-icons'
 import { Link } from 'react-router-dom';
 
@@ -17,7 +18,10 @@ const ExtraKnowledge = () => {
 
         <h5 className="pt-3 mb-0"><FontAwesomeIcon icon={faCompassDrafting} /> 3D design and render</h5>
         <Link to="/vr" className="h6">3D environmental render for VR</Link>
-        
+
+        <h5 className="pt-4 mb-3"><FontAwesomeIcon icon={ faLaptopCode } /> Usefull skills</h5>
+        <WeatherWidget />
+
         <div className="pt-4 h4 opacity-75">
         <FontAwesomeIcon className="px-2" icon={ faGitSquare } />
         <FontAwesomeIcon className="px-2" icon={ faReact } />

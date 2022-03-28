@@ -1,5 +1,7 @@
 import { Popover, Button, OverlayTrigger } from 'react-bootstrap'
 import React, { useState, useEffect } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const WeatherWidget = () => {
 
@@ -39,7 +41,17 @@ const WeatherWidget = () => {
             .then(res => res.json())
             .then(
                 (data) => {
-                    setweather(data);
+                    const dataExtended = {
+                        ...data,
+                        icon : weatherIcon(data.weather[0].icon),
+                        temp : kelvin2Celsius(data.main.temp),
+                        maxTemp : kelvin2Celsius(data.main.temp_max),
+                        minTemp : kelvin2Celsius(data.main.temp_min),
+                        humidity : data.main.humidity,
+                        description : data.weather[0].description
+                    }
+                    setweather(dataExtended);
+                    console.log(dataExtended)
                 },
                 (error) => {
                     setError(error);
@@ -49,17 +61,21 @@ const WeatherWidget = () => {
     }, [location])
 
   return (
-    <div className="col-sm-auto">
+    <div className="w-100">
         {error && "Weather failed loading"}
         {
         typeof(weather.main) !== "undefined" &&
-        <div className="row bg-dark text-light rounded d-flex align-items-center p-0 m-0">
-            <div style={{fontSize: "0.7em"}} className="col lh-1 py-0 pl-2">{kelvin2Celsius( weather.main.temp )}°C<br />
-            Hum{weather.main.humidity}%</div>
-            <div className="col py-0 px-1"><img alt="weather icon" style={{height: "2.5em"}} src={weatherIcon(weather.weather[0].icon)} /></div>
-            <OverlayTrigger trigger="focus" placement="top" overlay={popover}>
-                <Button variant="dark">Why this?</Button>
-            </OverlayTrigger>
+        <div style={{fontSize : "1em"}} className="rounded d-flex align-items-center p-0 m-0">
+            <div>
+                <div className="d-inline float-start me-3">
+                    <OverlayTrigger trigger="focus" placement="top" overlay={popover}>
+                        <Button className="btn-sm" variant="dark">REST Api usage<FontAwesomeIcon className="ms-2" icon={ faArrowRight } /></Button>
+                    </OverlayTrigger>
+                </div>
+                { weather.temp }°C<span className="d-none d-sm-inline"> - Hum { weather.humidity }%</span>
+                <img alt="weather icon" style={{height: "2.5em"}} src={ weather.icon } />
+                { weather.description }
+            </div>
         </div>
         }
     </div>

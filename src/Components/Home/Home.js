@@ -3,6 +3,7 @@ import Console from '../Console/Console'
 import Profile from '../Profile/Profile'
 import AboutMe from '../AboutMe/AboutMe';
 import ExtraKnowledge from '../ExtraKnowledge/ExtraKnowledge';
+import { Courses } from '../Courses/Courses';
 
 const Home = () => {
 
@@ -16,9 +17,13 @@ const Home = () => {
         </div>
       </article>
 
-      <article className="row px-3 px-md-4 pt-4 justify-content-md-center bg-light border-top">
+      <article className="row px-3 px-md-4 pt-4 justify-content-md-center bg-light border-top border-bottom">
         <AboutMe />
         <ExtraKnowledge />
+      </article>
+
+      <article className="row px-3 px-md-4 pt-4 justify-content-md-center bg-dark border-bottom">
+        <Courses />
       </article>
 
     </section>
