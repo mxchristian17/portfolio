@@ -51,7 +51,6 @@ const WeatherWidget = () => {
                         description : data.weather[0].description
                     }
                     setweather(dataExtended);
-                    console.log(dataExtended)
                 },
                 (error) => {
                     setError(error);
