@@ -6,6 +6,7 @@ import Home from './Components/Home/Home';
 import Contact from './Components/Contact/Contact';
 import Navbar from './Components/Navbar/Navbar.js';
 import Projects from './Components/Projects/Projects';
+import Resume from './Components/Resume/Resume';
 import VrView from './Components/VrView/VrView';
 import Footer from './Components/Footer/Footer';
 
@@ -27,6 +28,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="contact" element={<Contact />} />
           <Route path="projects/:projectId" element={<Projects />} />
+          <Route path="resume" element={<Resume />} />
           <Route path="vr" element={<VrView />} />
         </Routes>
       </GeneralContextProvider>
