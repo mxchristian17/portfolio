@@ -5,6 +5,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const WeatherWidget = () => {
 
+    const [ showRestApi, setShowRestApi ] = useState(false);
     const [error, setError] = useState(null);
     const [weather, setweather] = useState([]);
     const [location, setLocation] = useState();
@@ -24,7 +25,7 @@ const WeatherWidget = () => {
 
     const kelvin2Celsius = (T) => { return Math.round((T-273.15) * 10) / 10 }
     useEffect(() => {
-        if(location == null) {
+        if(location == null & showRestApi) {
             if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition((loc) => {
                     setLocation( { latitude: loc.coords.latitude, longitude: loc.coords.longitude } )
@@ -64,7 +65,7 @@ const WeatherWidget = () => {
         {error && "Weather failed loading"}
         <div style={{fontSize : "1em"}} className="rounded d-flex align-items-center p-0 m-0">
         {
-        typeof(weather.main) !== "undefined" ?
+        typeof(weather.main) !== "undefined" & showRestApi ?
             <div>
                 <div className="d-inline float-start me-3">
                     <OverlayTrigger trigger="focus" placement="top" overlay={popover}>
@@ -75,7 +76,10 @@ const WeatherWidget = () => {
                 <img alt="weather icon" style={{height: "2.5em"}} src={ weather.icon } />
                 { weather.description }
             </div>
-        :   <h6>REST API usage <small className="text-secondary">(enable location on your browser to look one example here!)</small></h6>
+        :   showRestApi ? 
+            <h6>REST API usage <small className="text-secondary">(enable location on your browser to look one example here!)</small></h6>
+            :
+            <div><h6 className="d-inline pe-2">REST API usage<FontAwesomeIcon className="ms-2" icon={ faArrowRight } /></h6><button className="btn btn-sm btn-dark" onClick={()=>{setShowRestApi(true)}}>Show example</button></div>
         }
         </div>
     </div>

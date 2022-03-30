@@ -58,8 +58,8 @@ const Resume = () => {
           <hr className="d-block d-lg-none" />
 
           <h3>About me</h3>
-          <p>I´m a mechanical engineer passionate about programming. In the last 12 years I spent thousand of hours doing projects and learning several programming languages like PHP, SQL, JavaScript, HTML5 and Python. I'm very self taught and I´m always predisposed to learn new things.</p>
-          <p>According to the LinkedIn PHP skill test, I am in the top 5% of 505.5K people who did it. Currently I´m working as a mechanical engineer with 6 people in charge. I´m used to working on complex projects with strict deadlines. I´m trying to change my profile to the software industry. I can write here a lot of things, but I think you need to know me if you want to understand how much I can offer to your company.</p>
+          <p>I'm a mechanical engineer passionate about programming. In the last 12 years I spent thousand of hours doing projects and learning several programming languages like PHP, SQL, JavaScript, HTML5 and Python. I'm very self taught and always predisposed to learn new things.</p>
+          <p>According to the LinkedIn PHP skill test, I'm in the top 5% of 505.5K people who did it. Currently I'm working as a mechanical engineer with 6 people in charge. I'm used to working on complex projects with strict deadlines. I'm trying to change my profile to the software industry. I can write here a lot of things, but I think you need to know me if you want to understand how much I can offer to your company.</p>
           
           <hr />
 

@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 const ExtraKnowledge = () => {
   return (
     <div className="col-lg-4 text-start px-4 py-3">
-        <h4>Some extra knowledge...</h4>
+        <h4>Some extra knowledge</h4>
         
         <h5 className="pt-3 mb-0"><FontAwesomeIcon icon={faCube} /> Industrial Automation</h5>
         <a href="https://youtu.be/N-JrJYE6JDA?t=15" target="_blank" rel="noreferrer" className="h6" alt="PLC and HMI programming">Festo PLC and HMI programming</a>

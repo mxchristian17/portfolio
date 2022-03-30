@@ -22,7 +22,7 @@ const Console = () => {
         <Symbol text="= { " /><br />
         &emsp;<Text text="'name' " /><Symbol text=": " /><Text text="'Duo Austral'" /><Symbol text="," /><br />
         &emsp;<Text text="'date' " /><Symbol text=": " /><Text text="'01/02/2022'" /><Symbol text="," /><br />
-        &emsp;<Text text="'link' " /><Symbol text=": " /><a className="text-decoration-none" rel="noreferrer" href="https://github.com/mxchristian17/duoaustral.git" target="_blank"><Text text="'GitHub link'" /></a><Comment text=" // <-------" /><br />
+        &emsp;<Text text="'link' " /><Symbol text=": " /><a className="btn btn-sm btn-secondary py-0 text-decoration-none" rel="noreferrer" href="https://github.com/mxchristian17/duoaustral.git" target="_blank">GitHub link</a><Comment text=" // <--" /><br />
         <Symbol text="}" />
         <br />
 
@@ -31,7 +31,7 @@ const Console = () => {
         <Symbol text="= { " /><br />
         &emsp;<Text text="'name' " /><Symbol text=": " /><Text text="'Neutrinus'" /><Symbol text="," /><br />
         &emsp;<Text text="'date' " /><Symbol text=": " /><Text text="'01/03/2020'" /><Symbol text="," /><br />
-        &emsp;<Text text="'link' " /><Symbol text=": " /><a className="text-decoration-none" rel="noreferrer" href="https://github.com/mxchristian17/Neutrinus.git" target="_blank"><Text text="'GitHub link'" /></a><Comment text=" // <-------" /><br />
+        &emsp;<Text text="'link' " /><Symbol text=": " /><a className="btn btn-sm btn-secondary py-0 text-decoration-none" rel="noreferrer" href="https://github.com/mxchristian17/Neutrinus.git" target="_blank">GitHub link</a><Comment text=" // <--" /><br />
         <Symbol text="}" />
         <br />
 
@@ -40,7 +40,7 @@ const Console = () => {
         <Symbol text="= { " /><br />
         &emsp;<Text text="'name' " /><Symbol text=": " /><Text text="'Administrador OyC'" /><Symbol text="," /><br />
         &emsp;<Text text="'date' " /><Symbol text=": " /><Text text="'01/03/2016'" /><Symbol text="," /><br />
-        &emsp;<Text text="'link' " /><Symbol text=": " /><Link to="/projects/Administrador%20OyC" className="text-decoration-none"><Text text="'Link'" /></Link><Comment text=" // <-------" /><br />
+        &emsp;<Text text="'link' " /><Symbol text=": " /><Link to="/projects/Administrador%20OyC" className="btn btn-sm btn-secondary py-0 text-decoration-none">Link</Link><Comment text=" // <--" /><br />
         <Symbol text="}" />
         <div className="cursor"></div>
 
