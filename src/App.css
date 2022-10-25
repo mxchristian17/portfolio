@@ -3,3 +3,23 @@
 .App {
   text-align: center;
 }
+
+@page {
+  margin: 0.8cm 1cm 0.8cm 2cm;
+  size: A4;
+}
+.print {
+  box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%) !important;
+  border-radius: 20px !important;
+}
+@media print {
+  .print {
+    zoom: 100%;
+    box-shadow: none !important;
+    border-radius: 0cm !important;
+  }
+  h3 {
+    padding-top:0.2cm;
+    border-top: 1px #CCC solid;
+  }
+}
