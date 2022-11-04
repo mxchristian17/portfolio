@@ -68,7 +68,7 @@ const Resume = () => {
           <h3>Professional experience</h3>
 
           <h6>2015 {'>'} Present</h6>
-          <p>Orengia y Conforti ICSA - PHP FULL STACK developer (PHP, MYSQL, JavaScript, Jquery, Bootstrap and Java).</p>
+          <p>Orengia y Conforti ICSA - Project Manager / PHP developer (PHP, MYSQL, JavaScript, Jquery, Bootstrap and Java).</p>
 
           <h4> Projects</h4>
 
