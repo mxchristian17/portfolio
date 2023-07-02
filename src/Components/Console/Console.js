@@ -40,7 +40,7 @@ const Console = () => {
         <Symbol text="= { " /><br />
         &emsp;<Text text="'name' " /><Symbol text=": " /><Text text="'Administrador OyC'" /><Symbol text="," /><br />
         &emsp;<Text text="'date' " /><Symbol text=": " /><Text text="'01/03/2016'" /><Symbol text="," /><br />
-        &emsp;<Text text="'link' " /><Symbol text=": " /><Link to="/projects/Administrador%20OyC" className="btn btn-sm btn-secondary py-0 text-decoration-none">Link</Link><Comment text=" // <--" /><br />
+        &emsp;<Text text="'link' " /><Symbol text=": " /><a className="btn btn-sm btn-secondary py-0 text-decoration-none" rel="noreferrer" href="https://drive.google.com/file/d/1D5VTahGoNpqYwlt7NwE_EcpfxFOeXQcG/view?usp=sharing" target="_blank">Demo video</a><Comment text=" // <--" /><br />
         <Symbol text="}" />
         <div className="cursor"></div>
 
