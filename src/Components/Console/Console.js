@@ -7,7 +7,6 @@ import Comment from '../SyntaxStyles/Comment'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBootstrap, faCss3, faGitSquare, faHtml5, faLaravel, faPhp, faReact } from '@fortawesome/free-brands-svg-icons'
 import '../Console/Cursor.css'
-import { Link } from 'react-router-dom'
 
 
 const Console = () => {
