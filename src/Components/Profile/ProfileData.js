@@ -13,7 +13,7 @@ const ProfileData = () => {
             <a href="https://www.linkedin.com/in/orengiachristian/" rel="noreferrer" alt="LinkedIn" target="_blank" className="px-1 text-primary text-decoration-none"><FontAwesomeIcon icon={faLinkedin} swapOpacity /></a>
         </h5>
         <h6 className="py-0">City: Mar del Plata, Argentina</h6>
-        <h6 className="py-0">Age: 32</h6>
+        <h6 className="py-0">Age: 33</h6>
     </div>
   )
 }
