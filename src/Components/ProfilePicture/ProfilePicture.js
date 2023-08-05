@@ -12,7 +12,7 @@ const ProfilePicture = () => {
             </div>
         </div>} 
 
-        <img onLoad={() => setLoading(false)} src="/images/CEO.png" style={{maxWidth : "15em"}} className={loading ? "d-none" :  "w-100 align-middle rounded-circle shadow"} alt="avatar" />
+        <img onLoad={() => setLoading(false)} src="/images/CEO.jpg" style={{maxWidth : "15em"}} className={loading ? "d-none" :  "w-100 align-middle rounded-circle shadow"} alt="avatar" />
     </div>
   )
 }
