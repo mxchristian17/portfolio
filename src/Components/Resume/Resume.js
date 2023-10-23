@@ -52,6 +52,7 @@ const Resume = () => {
           </div>
 
         </article>
+        <div class="pagebreak"> </div>
         <article className="col-12 col-lg-6 text-start">
           <h1 className="d-none d-lg-block">Christian Ezequiel Orengia</h1>
 

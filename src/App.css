@@ -22,4 +22,5 @@
     padding-top:0.2cm;
     border-top: 1px #CCC solid;
   }
+  .pagebreak { page-break-before: always; }
 }
