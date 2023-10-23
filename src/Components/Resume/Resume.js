@@ -40,11 +40,11 @@ const Resume = () => {
               <div className="col-10 h6"><a href="https://www.linkedin.com/in/orengiachristian/" className="text-decoration-none" target="_blank" rel="noreferrer">LinkedIn</a></div>
             </div>
 
-            <hr className="d-none d-lg-block my-4" />
+            <hr className="my-2 my-lg-4" />
   
-            <h3 className="d-none d-lg-block mb-3">More information</h3>
+            <h3 className="mb-3">More information</h3>
             
-            <ul className="d-none d-lg-block">
+            <ul className="my-0 py-0">
               <li>Date of birth: 05/01/1990 (Mar del Plata, Argentina)</li>
               <li>Citizenships: Argentine and Italian</li>
             </ul>
@@ -52,19 +52,28 @@ const Resume = () => {
           </div>
 
         </article>
-        <div class="pagebreak"> </div>
         <article className="col-12 col-lg-6 text-start">
           <h1 className="d-none d-lg-block">Christian Ezequiel Orengia</h1>
 
           <hr className="d-block d-lg-none" />
 
           <h3>About me</h3>
-          <p>I'm an engineer passionate about programming.</p>
-          <p>In the last 12 years I became an expert in PHP, MySQL, JavaScript and HTML5. I am a proactive individual with a strong enthusiasm for self-directed learning and a continuous desire to acquire new skills.</p>
-          <p>My primary career objective is to enhance my developer skills and leverage my knowledge to positively impact people's lives.</p>
+          <p className="my-0 py-0 mb-lg-3">I'm an engineer passionate about programming.</p>
+          <p className="my-0 py-0 mb-lg-3">In the last 12 years I became an expert in PHP, MySQL, JavaScript and HTML5. I am a proactive individual with a strong enthusiasm for self-directed learning and a continuous desire to acquire new skills.</p>
+          <p className="my-0 py-0 mb-lg-3">My primary career objective is to enhance my developer skills and leverage my knowledge to positively impact people's lives.</p>
           
-          <hr />
+          <hr className="pt-4 pt-lg-0" />
           <br className="d-none d-print-block" />
+
+          <h3>Courses and certificates</h3>
+          <p className="my-0"><span className="text-secondary">2022</span> - <b>React Js</b> (<a className="text-decoration-none" href="https://www.coderhouse.com/certificados/61e7654e6dd5d6007ce70afd" target="_blank" rel="noreferrer">certified by Coderhouse</a>) <small className="text-secondary">Top 10% of 150 students</small></p>
+          <p className="my-0"><span className="text-secondary">2022</span> - <b>Metodologías ágiles (SCRUM)</b> (<a className="text-decoration-none" href="https://www.coderhouse.com/certificados/631f298bcd57750024b017bc" target="_blank" rel="noreferrer">certified by Coderhouse</a>)</p>
+          <p className="my-0"><span className="text-secondary">2022</span> - <b>C1 advanced English level</b> (<a className="text-decoration-none" href="https://www.efset.org/cert/CNpdKG" target="_blank" rel="noreferrer">certified by EF SET</a>)</p>
+          <p className="my-0"><span className="text-secondary">2021</span> - Introduction to Computer Science and Programming Using <b>Python</b> (by MIT)</p>
+          <p className="my-0"><span className="text-secondary">2014</span> - <b>Autocad 2D / 3D</b> (50hs ; ERP Campus Virtual)</p>
+          <p className="my-0"><span className="text-secondary">2005</span> {'>'} 2007 - <b>AutoCAD 2D y 3D</b> (144hs ; Instituto Industrial Pablo Tavelli)</p>
+
+          <hr />
 
           <h3>Professional experience</h3>
 
@@ -81,22 +90,12 @@ const Resume = () => {
 
           <hr />
 
-          <h3>Courses and certificates</h3>
-          <p className="my-0"><span className="text-secondary">2022</span> - <b>React Js</b> (<a className="text-decoration-none" href="https://www.coderhouse.com/certificados/61e7654e6dd5d6007ce70afd" target="_blank" rel="noreferrer">certified by Coderhouse</a>) <small className="text-secondary">Top 10% of 150 students</small></p>
-          <p className="my-0"><span className="text-secondary">2022</span> - <b>Metodologías ágiles (SCRUM)</b> (<a className="text-decoration-none" href="https://www.coderhouse.com/certificados/631f298bcd57750024b017bc" target="_blank" rel="noreferrer">certified by Coderhouse</a>)</p>
-          <p className="my-0"><span className="text-secondary">2022</span> - <b>C1 advanced English level</b> (<a className="text-decoration-none" href="https://www.efset.org/cert/CNpdKG" target="_blank" rel="noreferrer">certified by EF SET</a>)</p>
-          <p className="my-0"><span className="text-secondary">2021</span> - Introduction to Computer Science and Programming Using <b>Python</b> (by MIT)</p>
-          <p className="my-0"><span className="text-secondary">2014</span> - <b>Autocad 2D / 3D</b> (50hs ; ERP Campus Virtual)</p>
-          <p className="my-0"><span className="text-secondary">2005</span> {'>'} 2007 - <b>AutoCAD 2D y 3D</b> (144hs ; Instituto Industrial Pablo Tavelli)</p>
-
-          <hr />
-
           <h3>Academic training</h3>
 
           <h6>University studies</h6>
           <p>2008 {'>'} 2014 – Mechanical Engineer (5 year career). General average: 7,40 (Facultad de Ingeniería de la Universidad Nacional de Mar del Plata)</p>
 
-          <hr className="my-4" />
+          <hr />
 
           <h3>Languages</h3>
 
@@ -105,15 +104,6 @@ const Resume = () => {
           
           <h6>Spanish</h6>
           <p>Native</p>
-
-          <hr className="d-block d-lg-none my-4" />
-  
-          <h3 className="d-block d-lg-none mb-3">More information</h3>
-          
-          <ul className="d-block d-lg-none">
-            <li>Date of birth: 05/01/1990 (Mar del Plata, Argentina)</li>
-            <li>Citizenships: Argentine and Italian</li>
-          </ul>
 
         </article>
       </div>
