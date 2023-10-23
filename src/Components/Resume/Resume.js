@@ -40,11 +40,11 @@ const Resume = () => {
               <div className="col-10 h6"><a href="https://www.linkedin.com/in/orengiachristian/" className="text-decoration-none" target="_blank" rel="noreferrer">LinkedIn</a></div>
             </div>
 
-            <hr className="d-block d-lg-none my-4" />
+            <hr className="d-none d-lg-block my-4" />
   
-            <h3 className="d-block d-lg-none mb-3">More information</h3>
+            <h3 className="d-none d-lg-block mb-3">More information</h3>
             
-            <ul className="d-block d-lg-none">
+            <ul className="d-none d-lg-block">
               <li>Date of birth: 05/01/1990 (Mar del Plata, Argentina)</li>
               <li>Citizenships: Argentine and Italian</li>
             </ul>
@@ -105,11 +105,11 @@ const Resume = () => {
           <h6>Spanish</h6>
           <p>Native</p>
 
-          <hr className="d-none d-lg-block my-4" />
+          <hr className="d-block d-lg-none my-4" />
   
-          <h3 className="d-none d-lg-block mb-3">More information</h3>
+          <h3 className="d-block d-lg-none mb-3">More information</h3>
           
-          <ul className="d-none d-lg-block">
+          <ul className="d-block d-lg-none">
             <li>Date of birth: 05/01/1990 (Mar del Plata, Argentina)</li>
             <li>Citizenships: Argentine and Italian</li>
           </ul>
