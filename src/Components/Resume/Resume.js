@@ -59,8 +59,8 @@ const Resume = () => {
 
           <h3>About me</h3>
           <p>I'm an engineer passionate about programming.</p>
-          <p>In the last 12 years I became an expert in PHP, MySQL, JavaScript and HTML5. I'm very self taught and always predisposed to learn new things.</p>
-          <p>My main professional goal is to improve my development skills and change people's lives with my knowledge.</p>
+          <p>In the last 12 years I became an expert in PHP, MySQL, JavaScript and HTML5. I am a proactive individual with a strong enthusiasm for self-directed learning and a continuous desire to acquire new skills.</p>
+          <p>My primary career objective is to enhance my developer skills and leverage my knowledge to positively impact people's lives.</p>
           
           <hr />
           <br className="d-none d-print-block" />
@@ -76,7 +76,7 @@ const Resume = () => {
           <p>Neutrinus – Business general data manager (Laravel, Bootstrap, MYSQL, JavaScript, Jquery and Python).</p>
 
           <h6>2010 {'>'} 2013</h6>
-          <p>IngenieriaMDP – Web campus for students of “Facultad de Ingeniería de la Universidad Nacional de Mar del Plata” with more than 600 registered users. (PHP, JavaScript, CSS, HTML).</p>
+          <p>Web campus for students of Mar del Plata University. (PHP, JavaScript, CSS, HTML).</p>
 
           <hr />
 
