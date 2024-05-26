@@ -29,7 +29,7 @@ const Resume = () => {
             </div>
             <div className="row mb-2">
               <div className="col-1"><FontAwesomeIcon className="h6 align-middle pe-2" icon={ faLocationPin } /></div>
-              <div className="col-10 h6">Pringles 610, Mar del Plata, Argentina</div>
+              <div className="col-10 h6">Bermejo 2721, Mar del Plata, Argentina</div>
             </div>
             <div className="row mb-2">
               <div className="col-1"><FontAwesomeIcon className="h6 align-middle pe-2" icon={ faLink } /></div>
@@ -77,7 +77,10 @@ const Resume = () => {
 
           <h3>Professional experience</h3>
 
-          <h6>2015 {'>'} Present</h6>
+          <h6>2024 {'>'} Present</h6>
+          <p>Growketing - Full stack developer.</p>
+
+          <h6>2015 {'>'} 2023</h6>
           <p>Orengia y Conforti ICSA - Project Manager / PHP developer (PHP, MYSQL, JavaScript, Jquery, Bootstrap and Java).</p>
 
           <h4> Projects</h4>
